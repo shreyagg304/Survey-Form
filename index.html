@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Food Survey form</h1>
+    <p id="description">Quick bites, big insights! Share your food favorites with us!</p>
+    <form id="survey-form">
+      <fieldset class="personal">
+      <div><label id="name-label" for="name">Name <input type="text" name="name" id="name" placeholder="Enter your name" class="space" required></label></div>
+      <div><label id="email-label" for="email">Email <input type="email" name="email" id="email" placeholder="Enter your email" class="space" required></label></div>
+      <div><label id="number-label" for="number">Age <input type="number" name="number" id="number" placeholder="Age" class="space" min=5 max=120></label></div>
+      </fieldset>
+      <fieldset>
+        <div class="ques">What is your primary dietary preference?</div>
+        <div><label for="veg"> <input type="radio" value="veg" id="veg" name="preference" checked>Vegetarian</label></div>
+        <div><label for="vegan"> <input type="radio" value="vegan" id="vegan" name="preference">Vegan</label></div>
+        <div><label for="nonveg"> <input type="radio" value="nonveg" id="nonveg" name="preference">Non Vegetarian</label></div>
+      </fieldset>
+      <fieldset>
+        <div class="ques">Select your preferred beverage with meals:</div>
+        <select id="dropdown">
+          <option selected value disabled>(select one)</option>
+          <option value="1">Water</option>
+          <option value="2">Soda</option>
+          <option value="3">Coffee</option>
+          <option value="4">Tea</option>
+          <option value="5">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <div class="ques">What is your favorite type of cuisine?</div>
+        <div>
+          <label for="italian"> <input type="checkbox" value="italian" name="italian" id="italian">Italian</label>
+        </div>
+        <div>
+          <label for="chinese"> <input type="checkbox" value="chinese" name="chinese" id="chinese">Chinese</label>
+        </div>
+        <div>
+          <label for="indian"> <input type="checkbox" value="indian" name="indian" id="indian">Indian</label>
+        </div>
+        <div>
+          <label for="mexican"> <input type="checkbox" value="mexican" name="mexican" id="mexican">Mexican</label>
+        </div>
+        <div>
+          <label for="japanese"> <input type="checkbox" value="japanese" name="japanese" id="japanese">Japanese</label>
+        </div>
+        <div>
+          <label for="american"> <input type="checkbox" value="american" name="american" id="american">American</label>
+        </div>
+        <div>
+          <label for="other"> <input type="checkbox" value="other" name="other" id="other">Other</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="ques">Any comments or suggestions?
+          <textarea rows=3 placeholder="Write here..."></textarea>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit" name="submit" id="submit">
+    </form>
+  </body>
+</html>
